@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FocusFlow - An intuitive study planner app designed to help students organize tasks, boost productivity with Pomodoro timers, and achieve academic success.">
+  <title>FocusFlow | Smart Study Planner & Focus App</title>
+  
+  <!-- Google Fonts for Modern, Clean Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. STICKY NAVIGATION BAR
+       ======================================================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-logo" aria-label="FocusFlow Home">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="logo-text">Focus<span class="logo-highlight">Flow</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Navbar Action Button -->
+      <div class="nav-cta">
+        <a href="#cta" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         2. HERO SECTION
+         ======================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left: Hero Text & Call to Action -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>New: AI Exam Countdown & Smart Timetables</span>
+          </div>
+
+          <h1 class="hero-title">
+            Master Your Studies.<br>
+            <span class="text-gradient">Zero Overwhelm.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            FocusFlow is the modern study planner designed for high-achieving students.
+            Effortlessly organize assignments, study deeply with integrated Pomodoro sessions,
+            and track your academic journey in one clean, distraction-free space.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#features" class="btn btn-primary">Start Planning Free</a>
+            <a href="#about" class="btn btn-secondary">Learn More &darr;</a>
+          </div>
+
+          <!-- Social Proof Highlights -->
+          <div class="hero-stats">
+            <div class="stat-pill">
+              <span class="stat-number">50k+</span>
+              <span class="stat-label">Students Enrolled</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-number">4.9/5</span>
+              <span class="stat-label">App Rating</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-number">94%</span>
+              <span class="stat-label">Grade Improvement</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Pure CSS Dashboard Preview Mockup -->
+        <div class="hero-visual">
+          <div class="mockup-card">
+            
+            <!-- Window Top Bar -->
+            <div class="mockup-header">
+              <div class="window-controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="mockup-header-title">Daily Study Planner</span>
+              <span class="mockup-badge">LIVE SESSION</span>
+            </div>
+
+            <!-- Focus Timer Widget inside Mockup -->
+            <div class="timer-widget">
+              <div class="timer-info">
+                <span class="timer-label">CURRENT FOCUS SESSION</span>
+                <span class="timer-task">Organic Chemistry &bull; Chapter 7</span>
+              </div>
+              <div class="timer-countdown">24:18</div>
+              <div class="timer-progress-track">
+                <div class="timer-progress-fill"></div>
+              </div>
+            </div>
+
+            <!-- Task List inside Mockup -->
+            <div class="mockup-tasks">
+              <div class="task-heading">Today's Priority Queue</div>
+
+              <div class="task-item task-done">
+                <span class="task-checkbox checked">&#10003;</span>
+                <div class="task-details">
+                  <span class="task-name">Calculus II Problem Set</span>
+                  <span class="task-meta">Completed in 45 mins</span>
+                </div>
+                <span class="task-tag tag-math">Math</span>
+              </div>
+
+              <div class="task-item task-active">
+                <span class="task-checkbox in-progress">&#9679;</span>
+                <div class="task-details">
+                  <span class="task-name">Organic Chemistry Reaction Mechanisms</span>
+                  <span class="task-meta">In progress &bull; 25m left</span>
+                </div>
+                <span class="task-tag tag-science">Science</span>
+              </div>
+
+              <div class="task-item">
+                <span class="task-checkbox"></span>
+                <div class="task-details">
+                  <span class="task-name">World History Essay Outline</span>
+                  <span class="task-meta">Scheduled for 4:00 PM</span>
+                </div>
+                <span class="task-tag tag-history">History</span>
+              </div>
+            </div>
+
+            <!-- Daily Target Bar -->
+            <div class="mockup-footer">
+              <span>Daily Goal: 4 of 5 Pomodoros Completed</span>
+              <span class="streak-badge">&#128293; 14-Day Streak</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. SECTION: CORE FEATURES (CARDS)
+         ======================================================== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Powerful Features</span>
+          <h2 class="section-title">Designed for Serious Learners</h2>
+          <p class="section-description">
+            Everything you need to eliminate procrastination, organize busy semesters,
+            and turn chaotic study days into predictable academic achievements.
+          </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+          
+          <!-- Feature Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon icon-indigo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Smart Timetable Generator</h3>
+            <p class="feature-text">
+              Input your classes and assignment deadlines. FocusFlow automatically crafts a balanced daily revision plan so you never pull an all-nighter again.
+            </p>
+          </article>
+
+          <!-- Feature Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon icon-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Integrated Pomodoro Timer</h3>
+            <p class="feature-text">
+              Work in focused 25-minute bursts followed by restorative breaks. Stay locked into deep work without mental burnout or mid-study distractions.
+            </p>
+          </article>
+
+          <!-- Feature Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon icon-amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Productivity & Streak Analytics</h3>
+            <p class="feature-text">
+              Track your weekly study hours, subject distribution, and build unbreakable habits with daily study streaks that celebrate your commitment.
+            </p>
+          </article>
+
+          <!-- Feature Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon icon-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Spaced Repetition Prompts</h3>
+            <p class="feature-text">
+              Built on cognitive science memory curves. Automatically prompts you to review key topics at optimal intervals for maximum long-term retention.
+            </p>
+          </article>
+
+          <!-- Feature Card 5 -->
+          <article class="feature-card">
+            <div class="feature-icon icon-rose">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Exam Countdown & Milestones</h3>
+            <p class="feature-text">
+              Set target exam dates and major paper deadlines. Watch real-time countdowns and break massive syllabi down into manageable weekly milestones.
+            </p>
+          </article>
+
+          <!-- Feature Card 6 -->
+          <article class="feature-card">
+            <div class="feature-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                <line x1="4" y1="22" x2="4" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Priority Matrix Planner</h3>
+            <p class="feature-text">
+              Classify coursework with the Eisenhower matrix (Urgent vs. Important). Conquer the critical tasks first and stop stressing over trivial busywork.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. SECTION: ABOUT / HOW IT WORKS
+         ======================================================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Left Column: Narrative -->
+          <div class="about-content">
+            <span class="section-tag">About FocusFlow</span>
+            <h2 class="section-title">The Study System That Adapts to Your Natural Rhythm</h2>
+            <p class="about-text">
+              Most productivity apps are built for corporate teams, not students facing multiple midterms, problem sets, and lab reports. FocusFlow was created to bridge this gap.
+            </p>
+            <p class="about-text">
+              Instead of overwhelming you with rigid to-do lists, FocusFlow uses evidence-based learning principles—time-blocking, spaced intervals, and active recall cues—to help you achieve peak academic performance while maintaining work-life balance.
+            </p>
+            
+            <ul class="about-checklist">
+              <li class="checklist-item">
+                <span class="check-icon">&#10003;</span>
+                <span><strong>No Clutter:</strong> Minimalist UI keeps you focused strictly on what matters today.</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">&#10003;</span>
+                <span><strong>Science-Backed:</strong> Incorporates active recall and spaced intervals into your schedule.</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">&#10003;</span>
+                <span><strong>Zero Setup Friction:</strong> Get your entire semester scheduled in under 5 minutes.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Comparison / Benefits Cards -->
+          <div class="about-cards">
+            
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-number">01</span>
+                <h3 class="info-title">Plan Your Semester</h3>
+              </div>
+              <p class="info-desc">
+                Import syllabus dates, exam deadlines, and recurring classes. FocusFlow allocates study blocks based on difficulty.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-number">02</span>
+                <h3 class="info-title">Lock In Deep Work</h3>
+              </div>
+              <p class="info-desc">
+                Launch focused sessions with the built-in timer. Track active minutes and reduce screen switching during study hours.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-number">03</span>
+                <h3 class="info-title">Celebrate Real Progress</h3>
+              </div>
+              <p class="info-desc">
+                Review your weekly analytics, maintain daily streaks, and head into exam week feeling completely prepared and confident.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. SECTION: TESTIMONIALS
+         ======================================================== -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Student Stories</span>
+          <h2 class="section-title">Loved by High Achievers Worldwide</h2>
+          <p class="section-description">
+            Discover how students from top universities and high schools use FocusFlow to boost grades and reduce study anxiety.
+          </p>
+        </div>
+
+        <!-- Testimonial Cards Grid -->
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="star-rating" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;Med school coursework was swallowing my life until I found FocusFlow. The automated study intervals and spaced repetition reminders allowed me to ace my anatomy board exams without burning out.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-indigo">MP</div>
+              <div class="author-details">
+                <span class="author-name">Maya Patel</span>
+                <span class="author-role">Medical Student &bull; Johns Hopkins</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="star-rating" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;Balancing 4 AP classes and college applications was chaos. FocusFlow broke my week down into manageable sprints. My GPA jumped from 3.7 to 4.0 this semester. It is honestly irreplaceable.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-teal">AR</div>
+              <div class="author-details">
+                <span class="author-name">Alex Rivera</span>
+                <span class="author-role">High School Senior &bull; AP Scholar</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="star-rating" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;The Pomodoro timer matched with the daily task priority queue keeps me in flow while coding. I finish my algorithms problem sets in half the time I used to spend procrastinating.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-purple">SC</div>
+              <div class="author-details">
+                <span class="author-name">Sarah Chen</span>
+                <span class="author-role">Computer Science &bull; UC Berkeley</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. CALL TO ACTION BANNER
+         ======================================================== -->
+    <section id="cta" class="cta-banner">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">Ready to Take Control of Your Academic Journey?</h2>
+          <p class="cta-text">
+            Join over 50,000 students who plan smarter, study deeper, and achieve higher grades with FocusFlow. Free to get started.
+          </p>
+          <div class="cta-actions">
+            <a href="#contact" class="btn btn-light">Create Your Free Account</a>
+            <span class="cta-guarantee">&#10003; No credit card required &bull; Takes 2 minutes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. SECTION: CONTACT & FEEDBACK
+         ======================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Reach Out</span>
+          <h2 class="section-title">We'd Love to Hear From You</h2>
+          <p class="section-description">
+            Have a feature suggestion, campus partnership inquiry, or need help setting up your study routine? Drop us a line.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details / Info Cards -->
+          <div class="contact-info">
+            
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Email Us Directly</h3>
+                <p class="contact-card-text">support@focusflow-app.com</p>
+                <p class="contact-card-sub">Average response time: &lt; 2 hours</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Student Support HQ</h3>
+                <p class="contact-card-text">450 University Avenue, Suite 300</p>
+                <p class="contact-card-sub">Palo Alto, CA 94301</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Student Community</h3>
+                <p class="contact-card-text">Join 15,000+ peers on Discord</p>
+                <p class="contact-card-sub">Daily virtual study rooms & accountability</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form (Pure HTML5 Validation) -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="#" method="POST">
+              
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name</label>
+                <input 
+                  type="text" 
+                  id="full-name" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="e.g. Jordan Miller" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email-address" class="form-label">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email-address" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="e.g. jordan@university.edu" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="subject-field" class="form-label">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject-field" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="e.g. Question about timetable sync" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message-field" class="form-label">Message</label>
+                <textarea 
+                  id="message-field" 
+                  name="message" 
+                  rows="4" 
+                  class="form-textarea" 
+                  placeholder="Tell us what's on your mind or how we can assist you..." 
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       8. FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- Main Footer Columns -->
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand & Tagline -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="nav-logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="logo-text">Focus<span class="logo-highlight">Flow</span></span>
+          </a>
+          <p class="footer-tagline">
+            Empowering students worldwide to achieve academic excellence through structured planning, deep focus habits, and stress-free productivity.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About FocusFlow</a></li>
+            <li><a href="#testimonials">Student Reviews</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Study Resources -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Pomodoro Guide</a></li>
+            <li><a href="#about">Spaced Repetition</a></li>
+            <li><a href="#features">Study Timetable Tips</a></li>
+            <li><a href="#contact">Community Discord</a></li>
+            <li><a href="#cta">Student Discounts</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Social & Legal -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Connect With Us</h4>
+          <p class="footer-social-desc">Follow our daily study tips and campus updates:</p>
+          
+          <div class="social-links">
+            <!-- Twitter / X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="FocusFlow on Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="FocusFlow on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="FocusFlow on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="FocusFlow on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-contact-item">
+            <span>Email: hello@focusflow-app.com</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 FocusFlow Inc. All rights reserved.</p>
+        <p class="footer-credits">Crafted with pure semantic HTML5 &amp; CSS3. No frameworks or JavaScript.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
