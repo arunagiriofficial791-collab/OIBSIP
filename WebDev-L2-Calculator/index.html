@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Calculator | OIBSIP Task</title>
+  <meta name="description" content="A clean, responsive browser calculator built with HTML5, CSS3 Grid, and Vanilla JavaScript without eval()." />
+  
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator-wrapper">
+    <div class="calculator" id="calculator" role="region" aria-label="Calculator">
+      <!-- Calculator Header -->
+      <header class="calc-header">
+        <div class="brand">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="brand-title">CALC // PRO</span>
+        </div>
+        <span class="calc-badge">OASIS INFOBYTE</span>
+      </header>
+
+      <!-- Display Screen (Secondary line for history/expression & Main line for current input/result) -->
+      <section class="display-container" aria-live="polite">
+        <div class="previous-operand" id="previousOperand" aria-label="Previous calculation"></div>
+        <div class="current-operand" id="currentOperand" aria-label="Current input or result">0</div>
+      </section>
+
+      <!-- Keypad Grid Layout -->
+      <section class="keypad" id="keypad" role="group" aria-label="Calculator Keypad">
+        <!-- Row 1: Actions & Operations -->
+        <button type="button" class="btn btn-action" id="btnClear" data-action="clear" aria-label="Clear All">C</button>
+        <button type="button" class="btn btn-action" id="btnBackspace" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button type="button" class="btn btn-action" id="btnPercent" data-action="percent" aria-label="Percentage">%</button>
+        <button type="button" class="btn btn-operator" id="btnDivide" data-operator="÷" aria-label="Divide">÷</button>
+
+        <!-- Row 2: Numbers & Operations -->
+        <button type="button" class="btn btn-number" id="btn7" data-number="7">7</button>
+        <button type="button" class="btn btn-number" id="btn8" data-number="8">8</button>
+        <button type="button" class="btn btn-number" id="btn9" data-number="9">9</button>
+        <button type="button" class="btn btn-operator" id="btnMultiply" data-operator="×" aria-label="Multiply">×</button>
+
+        <!-- Row 3: Numbers & Operations -->
+        <button type="button" class="btn btn-number" id="btn4" data-number="4">4</button>
+        <button type="button" class="btn btn-number" id="btn5" data-number="5">5</button>
+        <button type="button" class="btn btn-number" id="btn6" data-number="6">6</button>
+        <button type="button" class="btn btn-operator" id="btnSubtract" data-operator="-" aria-label="Subtract">−</button>
+
+        <!-- Row 4: Numbers & Operations -->
+        <button type="button" class="btn btn-number" id="btn1" data-number="1">1</button>
+        <button type="button" class="btn btn-number" id="btn2" data-number="2">2</button>
+        <button type="button" class="btn btn-number" id="btn3" data-number="3">3</button>
+        <button type="button" class="btn btn-operator" id="btnAdd" data-operator="+" aria-label="Add">+</button>
+
+        <!-- Row 5: Plus/Minus, Zero, Decimal, Equals -->
+        <button type="button" class="btn btn-action" id="btnToggleSign" data-action="toggle-sign" aria-label="Toggle Positive or Negative">±</button>
+        <button type="button" class="btn btn-number" id="btn0" data-number="0">0</button>
+        <button type="button" class="btn btn-number" id="btnDecimal" data-action="decimal" aria-label="Decimal point">.</button>
+        <button type="button" class="btn btn-equals" id="btnEquals" data-action="equals" aria-label="Equals">=</button>
+      </section>
+
+      <!-- Keyboard Shortcuts Hint Footer -->
+      <footer class="calc-footer">
+        <span>⌨️ Keyboard Supported (0-9, +, -, *, /, Enter, Backspace, Esc)</span>
+      </footer>
+    </div>
+  </main>
+
+  <!-- JavaScript Logic File -->
+  <script src="script.js"></script>
+</body>
+</html>
